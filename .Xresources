@@ -1,0 +1,3 @@
+URxvt.intensityStyles: false
+URxvt.scrollBar: false
+URxvt.font: xft:Monospace:size=10
