@@ -11,6 +11,7 @@ FILES="
 .Xresources
 .vim/ftplugin/
 .i3/
+.i3status.conf
 "
 
 for file in $FILES
