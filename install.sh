@@ -10,12 +10,12 @@ FILES="
 .xinitrc
 .Xresources
 .vim/ftplugin/
+.i3/
 "
 
 for file in $FILES
 do
-	target=~/$file
-	target=${target%/}
+	target=~/${file%/}
 	if [ -h $target ]; then
 		rm -rf $target
 	elif [ -e $target ]; then

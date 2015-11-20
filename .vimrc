@@ -29,5 +29,6 @@ set nocompatible
 set noswapfile
 set nu
 set clipboard^=unnamed,unnamedplus
+set backspace=2
 
 autocmd BufWritePre * :%s/\s\+$//e
