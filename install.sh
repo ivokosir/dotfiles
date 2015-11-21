@@ -8,7 +8,6 @@ FILES="
 .inputrc
 .vimrc
 .xinitrc
-.Xresources
 .vim/ftplugin/
 .i3/
 .i3status.conf
@@ -17,9 +16,10 @@ FILES="
 for file in $FILES
 do
 	target=~/${file%/}
+	object=${DIR}/${file}
 	if [ -h $target ]; then
 		rm -rf $target
 	elif [ -e $target ]; then
 		mv $target ${target}.BACKUP
-	fi && ln -s ${DIR}/$file $target
+	fi && mkdir -p $(dirname $target) && ln -s $object $target
 done
