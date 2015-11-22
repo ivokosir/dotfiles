@@ -1,0 +1,46 @@
+cool website:
+http://joaquinlp.me/blog/your-guide-to-a-damn-light-arch-linux-with-i3-and-text-apps/
+
+intel-ucode -> that intel thing at boot (important, i guess)
+
+useradd command (rfkill is for wireless, wheel is for sudo):
+useradd -m -G wheel,rfkill ivo
+
+packages:
+git
+bash-completion
+dialog -> for wifi-menu
+ifplugd -> ehternet (netctl-ifplugd@{interface}.service)
+wpa_actiond -> wifi (netctl-auto@{interface}.service)
+  -> check network
+xf86-video-ati -> radeon driver
+xf86-video-intel -> indel driver
+xorg-server
+xorg-xrandr
+xf86-input-synaptics -> touchpad drivers
+alsa-utils -> amixer for sound vol up and down
+i3 -> window manager (package group)
+dmenu
+gnome-themes-standard -> theme for gtk2 and gtk3
+termite -> terminal emulator
+firefox -> install fonts first (dont forget acceleration, optional package)
+gvim
+zathura -> pdf viewer
+gpicview -> image viewer
+
+misc:
+zip, unzip
+
+network:
+  ethernet dhcp (also edit interface):
+    sudo cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/
+  wifi:
+    open wifi-menu with option -o to save config
+  bonding ?? todo
+
+fonts:
+ttf-dejavu
+ttf-droid
+ttf-freefont -> removes that github bug
+ttf-ubuntu-font-family
+ttf-liberation

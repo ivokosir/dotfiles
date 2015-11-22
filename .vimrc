@@ -21,14 +21,15 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'raichoo/haskell-vim'
 
 call vundle#end()
+
 filetype plugin indent on
 syntax on
 
-set go="aei"
+set go=ai
+set clipboard^=unnamedplus
 set nocompatible
 set noswapfile
 set nu
-set clipboard^=unnamed,unnamedplus
 set backspace=2
 
 autocmd BufWritePre * :%s/\s\+$//e
