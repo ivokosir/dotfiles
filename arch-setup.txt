@@ -19,6 +19,7 @@ xorg-server
 xorg-xrandr
 xf86-input-synaptics -> touchpad drivers
 alsa-utils -> amixer for sound vol up and down
+numlockx -> turn numlock at startup
 i3 -> window manager (package group)
 dmenu
 gnome-themes-standard -> theme for gtk2 and gtk3
