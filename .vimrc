@@ -1,3 +1,13 @@
+set go=ai
+set clipboard^=unnamedplus
+set nocompatible
+set noswapfile
+set nu
+set backspace=2
+
+" clear trailing whitespaces
+autocmd BufWritePre * :%s/\s\+$//e
+
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -24,12 +34,3 @@ call vundle#end()
 
 filetype plugin indent on
 syntax on
-
-set go=ai
-set clipboard^=unnamedplus
-set nocompatible
-set noswapfile
-set nu
-set backspace=2
-
-autocmd BufWritePre * :%s/\s\+$//e

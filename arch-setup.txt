@@ -1,7 +1,7 @@
 cool website:
 http://joaquinlp.me/blog/your-guide-to-a-damn-light-arch-linux-with-i3-and-text-apps/
 
-intel-ucode -> that intel thing at boot (important, i guess)
+intel-ucode: that intel thing at boot (important, i guess)
 
 useradd command (rfkill is for wireless, wheel is for sudo):
 useradd -m -G wheel,rfkill ivo
@@ -45,3 +45,6 @@ ttf-droid
 ttf-freefont -> removes that github bug
 ttf-ubuntu-font-family
 ttf-liberation
+
+autologin:
+https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console

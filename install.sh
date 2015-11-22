@@ -2,6 +2,7 @@
 
 # install custom data
 mkdir -p "$XDG_DATA_HOME"/bash
+mkdir -p "$XDG_DATA_HOME"/less
 
 # install all configs
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -9,6 +10,7 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FILES="
 .config/i3status/config
 .config/i3/config
+.config/gtk-2.0/gtkrc
 .config/git/config
 .config/readline/inputrc
 .config/X11/xinitrc
