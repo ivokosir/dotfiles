@@ -1,9 +1,17 @@
-set go=ai
+" clipboard on selected
+set guioptions=ai
+" use xorg clipboard
 set clipboard^=unnamedplus
+" make it vim
 set nocompatible
+" don't use swap
 set noswapfile
-set nu
+" use numbers
+set number
+" backspace in edit
 set backspace=2
+" change viminfo location
+set viminfo+=n~/.vim/viminfo
 
 " clear trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
