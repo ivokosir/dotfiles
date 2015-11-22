@@ -10,7 +10,7 @@ export HISTFILE="$XDG_DATA_HOME"/bash/history
 export LESSHISTFILE="$XDG_DATA_HOME"/less/history
 
 export PATH=$HOME/.cabal/bin:$PATH
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/gvim
 export PAGER=/usr/bin/less
 export HISTCONTROL=erasedups
 
