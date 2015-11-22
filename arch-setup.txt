@@ -49,3 +49,7 @@ ttf-liberation
 
 autologin:
 https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
+
+vundle:
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
