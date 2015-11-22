@@ -1,16 +1,21 @@
 #!/bin/bash
+
+# install custom data
+mkdir -p "$XDG_DATA_HOME"/bash
+
+# install all configs
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 FILES="
+.config/i3status/config
+.config/i3/config
+.config/git/config
+.config/readline/inputrc
+.config/X11/xinitrc
 .bash_profile
 .bashrc
-.gitconfig
-.inputrc
+.vim/ftplugin
 .vimrc
-.xinitrc
-.vim/ftplugin/
-.i3/
-.i3status.conf
 "
 
 for file in $FILES
