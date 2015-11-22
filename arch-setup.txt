@@ -27,6 +27,7 @@ firefox -> install fonts first (dont forget acceleration, optional package)
 gvim
 zathura -> pdf viewer
 gpicview -> image viewer
+light-git -> backlight setup, aur
 
 misc:
 zip, unzip
