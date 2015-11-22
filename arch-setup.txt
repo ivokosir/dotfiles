@@ -37,7 +37,7 @@ network:
   ethernet dhcp (also edit interface):
     sudo cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/
   wifi:
-    open wifi-menu with option -o to save config
+    wifi-menu (-o to encrypt)
   bonding ?? todo
 
 fonts:
