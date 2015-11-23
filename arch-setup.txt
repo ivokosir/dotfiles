@@ -23,7 +23,7 @@ numlockx -> turn numlock at startup
 i3 -> window manager (package group)
 dmenu
 gnome-themes-standard -> theme for gtk2 and gtk3
-termite -> terminal emulator
+roxterm -> terminal emulator
 firefox -> install fonts first (dont forget acceleration, optional package)
 gvim
 zathura -> pdf viewer

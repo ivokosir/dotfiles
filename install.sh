@@ -13,7 +13,7 @@ FILES="
 .config/gtk-2.0/gtkrc
 .config/git/config
 .config/readline/inputrc
-.config/X11/xinitrc
+.config/user-dirs.dirs
 .bash_profile
 .bashrc
 .vim/ftplugin
