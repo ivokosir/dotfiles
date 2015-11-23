@@ -8,6 +8,7 @@
 PS1='\$ '
 
 alias ls='ls --color=auto'
+alias term='roxterm'
 
 alias paci='sudo pacman -S'
 alias pacd='sudo pacman -Rns'
