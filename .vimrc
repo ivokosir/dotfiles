@@ -12,6 +12,8 @@ set number
 set backspace=2
 " change viminfo location
 set viminfo+=n~/.vim/viminfo
+" add search highlighting
+set hlsearch
 
 " clear trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
