@@ -40,7 +40,16 @@ Plugin 'Shougo/vimproc.vim'
 
 Plugin 'raichoo/haskell-vim'
 
+Plugin 'kchmck/vim-coffee-script'
+
+Plugin 'ctrlpvim/ctrlp.vim'
+
 call vundle#end()
 
 filetype plugin indent on
 syntax on
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg)|target)$',
+  \ 'file': '\v\.(class|so)$',
+  \ }

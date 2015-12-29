@@ -7,6 +7,8 @@ export XDG_DATA_HOME=$HOME/.local/share
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export HISTFILE="$XDG_DATA_HOME"/bash/history
+export HISTFILESIZE=20000
+export HISTSIZE=10000
 export LESSHISTFILE="$XDG_DATA_HOME"/less/history
 
 export EDITOR=/usr/bin/gvim
