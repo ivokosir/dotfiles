@@ -38,8 +38,6 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'Shougo/vimproc.vim'
 
-Plugin 'raichoo/haskell-vim'
-
 Plugin 'kchmck/vim-coffee-script'
 
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -50,6 +48,6 @@ filetype plugin indent on
 syntax on
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg)|target)$',
+  \ 'dir':  '\v[\/](\.(git|hg)|target|dist)$',
   \ 'file': '\v\.(class|so)$',
   \ }
