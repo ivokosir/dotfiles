@@ -1,22 +1,23 @@
 #!/usr/bin/env sh
 
-DIR=$(dirname "$0")
+dir=$(dirname "$0")
 
-FILES="
+files="
 config/fish/config.fish
 config/git/config
 config/i3/config
 config/i3status/config
 config/user-dirs.dirs
+local/bin/e
 xinitrc
 "
 
-for file in $FILES
+for input in $files
 do
-	target=~/.${file%/}
-	object=${DIR}/${file}
-	if [ -e $target ]; then
-		rm -rf $target
+	output=$HOME/.$input
+	input=${dir}/${input}
+	if [ -e $output ]; then
+		rm -rf $output
 	fi
-	mkdir -p $(dirname $target) && cp $object $target
+	mkdir -p $(dirname $output) && cp $input $output
 done
