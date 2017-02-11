@@ -7,6 +7,7 @@ fi
 
 .config/screenlayout/default.sh
 xscreensaver &
+xautolock -locker 'i3lock -c 002835' &
 xsetroot -cursor_name left_ptr &
 
 exec i3
