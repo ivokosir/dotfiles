@@ -36,7 +36,7 @@ zip, unzip
 
 network:
   ethernet dhcp (also edit interface):
-    sudo cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/
+    sudo cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/dhcp
   wifi:
     wifi-menu (-o to encrypt)
   bonding ?? todo
