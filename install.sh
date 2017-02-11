@@ -3,17 +3,18 @@
 DIR=$(dirname "$0")
 
 FILES="
-fish/config.fish
-git/config
-i3/config
-i3status/config
-user-dirs.dirs
+config/fish/config.fish
+config/git/config
+config/i3/config
+config/i3status/config
+config/user-dirs.dirs
+xinitrc
 "
 
 for file in $FILES
 do
-	target=~/.config/${file%/}
-	object=${DIR}/config/${file}
+	target=~/.${file%/}
+	object=${DIR}/${file}
 	if [ -e $target ]; then
 		rm -rf $target
 	fi
