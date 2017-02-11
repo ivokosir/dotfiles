@@ -1,32 +1,21 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
-# install custom data
-mkdir -p "$XDG_DATA_HOME"/bash
-mkdir -p "$XDG_DATA_HOME"/less
-
-# install all configs
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR=$(dirname "$0")
 
 FILES="
-.config/i3status/config
-.config/i3/config
-.config/gtk-2.0/gtkrc
-.config/git/config
-.config/readline/inputrc
-.config/user-dirs.dirs
-.bash_profile
-.bashrc
-.vim/ftplugin
-.vimrc
+fish/config.fish
+git/config
+i3/config
+i3status/config
+user-dirs.dirs
 "
 
 for file in $FILES
 do
-	target=~/${file%/}
-	object=${DIR}/${file}
-	if [ -h $target ]; then
+	target=~/.config/${file%/}
+	object=${DIR}/config/${file}
+	if [ -e $target ]; then
 		rm -rf $target
-	elif [ -e $target ]; then
-		mv $target ${target}.BACKUP
-	fi && mkdir -p $(dirname $target) && ln -s $object $target
+	fi
+	mkdir -p $(dirname $target) && cp $object $target
 done
