@@ -7,6 +7,7 @@ config/fontconfig/fonts.conf
 config/git/config
 config/i3/config
 config/i3status/config
+config/nvim/init.vim
 config/user-dirs.dirs
 local/bin/e
 xprofile
