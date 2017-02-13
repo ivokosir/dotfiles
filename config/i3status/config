@@ -1,26 +1,9 @@
-# i3status configuration file.
-# see "man i3status" for documentation.
-
-# It is important that this file is edited as UTF-8.
-# The following line should contain a sharp s:
-# ß
-# If the above line is not correctly displayed, fix your editor first!
-
 general {
-        colors = true
-        interval = 5
+        interval = 1
 	output_format = i3bar
 }
 
-order += "ethernet enp2s0"
-order += "volume master"
 order += "tztime local"
-
-ethernet enp2s0 {
-        # if you use %speed, i3status requires root privileges
-        format_up = "E: %ip"
-        format_down = "E: down"
-}
 
 tztime local {
         format = "%Y-%m-%d (%u) %H:%M"
