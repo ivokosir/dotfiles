@@ -1,14 +1,9 @@
-cool website:
-http://joaquinlp.me/blog/your-guide-to-a-damn-light-arch-linux-with-i3-and-text-apps/
-
-intel-ucode: that intel thing at boot (important, i guess)
-
-useradd command (rfkill is for wireless, wheel is for sudo):
-useradd -m -G wheel,rfkill ivo
+intel-ucode -> must be in efi entry
+useradd -m -G wheel,rfkill ivo -> (rfkill is for wireless, wheel is for sudo)
+chsh -s /usr/bin/fish
 
 packages:
 git
-bash-completion
 dialog -> for wifi-menu
 ifplugd -> ehternet (netctl-ifplugd@{interface}.service)
 wpa_actiond -> wifi (netctl-auto@{interface}.service)
@@ -18,21 +13,24 @@ xf86-video-intel -> indel driver
 xorg-server
 xorg-xrandr
 xf86-input-synaptics -> touchpad drivers
-alsa-utils -> amixer for sound vol up and down
+fish
+alsa-utils
+pulseaudio-alsa
+pavucontrol
+xautolock
 numlockx -> turn numlock at startup
+lightdm-gtk-greeter -> configs are in dotfiles (see down) install themes and icons
 i3 -> window manager (package group)
 dmenu
-gnome-themes-standard -> theme for gtk2 and gtk3
-roxterm -> terminal emulator
-firefox -> install fonts first (dont forget acceleration, optional package)
-gvim
+gnome-terminal
+firefox -> install fonts first
+nvim
 zathura -> pdf viewer
 gpicview -> image viewer
 light-git -> backlight setup, aur
 mpv -> video player
-
-misc:
-zip, unzip
+zip
+unzip
 
 network:
   ethernet dhcp (also edit interface):
@@ -41,15 +39,25 @@ network:
     wifi-menu (-o to encrypt)
   bonding ?? todo
 
+lightdm:
+copy lightm configs to /etc/lightdm/
+
+themes:
+gnome-themes-standard
+arc-solid-gtk-theme
+
+icons:
+arc-icon-theme
+gnome-icon-theme-extra
+elementary-icon-theme
+moka-icon-theme-git (AUR)
+
 fonts:
 ttf-dejavu
 ttf-droid
 ttf-freefont -> removes that github bug
 ttf-ubuntu-font-family
 ttf-liberation
-
-autologin:
-https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
 
 vundle:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
