@@ -3,13 +3,13 @@
 dir=$(dirname "$0")
 
 files="
-config/fish/config.fish
 config/fontconfig/fonts.conf
 config/git/config
 config/i3/config
 config/i3status/config
 config/user-dirs.dirs
 local/bin/e
+xprofile
 "
 
 for input in $files
