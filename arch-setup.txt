@@ -48,7 +48,7 @@ arc-solid-gtk-theme
 
 icons:
 arc-icon-theme
-gnome-icon-theme-extra
+gnome-icon-theme-extras
 elementary-icon-theme
 moka-icon-theme-git (AUR)
 
