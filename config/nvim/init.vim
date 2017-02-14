@@ -1,9 +1,9 @@
 filetype off
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#begin('~/.config/nvim/bundle/vundle')
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 call vundle#end()
 
