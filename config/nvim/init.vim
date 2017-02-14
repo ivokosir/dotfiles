@@ -21,5 +21,7 @@ set number
 " use fancy gui colors
 set termguicolors
 
-map <A-Space> <Esc>
-map! <A-Space> <Esc>
+noremap! <A-Space> <Esc>
+noremap <A-Space> <Esc>
+noremap <C-s> :w<CR>
+noremap <C-c> :qa<CR>
