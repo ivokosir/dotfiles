@@ -20,3 +20,6 @@ set noswapfile
 set number
 " use fancy gui colors
 set termguicolors
+
+map <A-Space> <Esc>
+map! <A-Space> <Esc>
