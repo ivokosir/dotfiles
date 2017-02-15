@@ -114,8 +114,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-new_window normal 0 px
-new_float normal 0 px
+new_window normal 0
+new_float normal 0
 for_window [class="Firefox" instance="Navigator"] border pixel 0
 
 # class                 border  backgr. text    indica. child_border
