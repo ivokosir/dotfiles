@@ -7,7 +7,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
-"
 
 filetype plugin indent on
 syntax on
