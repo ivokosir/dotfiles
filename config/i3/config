@@ -5,13 +5,13 @@ font pango:sans bold 10.5
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
-
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu
+# start a apps
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+bindsym $mod+bracketright exec --no-startup-id i3-sensible-editor
+bindsym $mod+backslash exec --no-startup-id firefox
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+x exec --no-startup-id xautolock -locknow
