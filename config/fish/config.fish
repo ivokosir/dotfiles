@@ -1,5 +1,5 @@
-alias t '$TERMINAL'
-alias e '$VISUAL'
+alias t "$TERMINAL"
+alias e "$VISUAL"
 
 alias paci 'sudo pacman -S'
 alias pacd 'sudo pacman -Rns'
