@@ -23,7 +23,7 @@ set number
 set termguicolors
 colorscheme onedark
 " clear background
-hi Normal guibg=none
+hi Normal guibg=#21242b
 
 noremap! <A-Space> <Esc>
 noremap <A-Space> <Esc>
