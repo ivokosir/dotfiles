@@ -1,10 +1,17 @@
+set shell=sh
+
 filetype off
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin('~/.config/nvim/bundle/vundle')
 
 Plugin 'VundleVim/Vundle.vim'
+" theme
 Plugin 'joshdick/onedark.vim'
+" required by ghcmod-vim
+Plugin 'Shougo/vimproc.vim'
+" cool haskell stuff
+Plugin 'eagletmt/ghcmod-vim'
 
 call vundle#end()
 
