@@ -43,12 +43,17 @@ noremap <C-d> :qa<CR>
 noremap! <C-w> <Esc>:q<CR>
 noremap <C-w> :q<CR>
 
-" copy paste
+" copy-paste
+nnoremap <C-x> dd
+vnoremap <C-x> d
 nnoremap <C-c> yy
 vnoremap <C-c> y
 noremap <C-v> P
 " we need to remap block select because of paste
 noremap <A-v> <C-v>
+
+" undo (nvim can't differentiate <C-*> and <C-S-*>
+noremap <C-z> u
 
 "Sets tabs to spaces and defines width of tab to 2 spaces and automatic indentation
 set expandtab
