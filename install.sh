@@ -8,6 +8,7 @@ config/fontconfig/fonts.conf
 config/git/config
 config/i3/config
 config/i3status/config
+config/nvim/ftplugin/haskell.vim
 config/nvim/init.vim
 config/user-dirs.dirs
 xprofile

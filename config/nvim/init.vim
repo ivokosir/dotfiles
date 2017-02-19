@@ -32,6 +32,8 @@ colorscheme onedark
 " clear background
 hi Normal guibg=#21242b
 
+let mapleader = "\<Space>"
+
 noremap! <A-Space> <Esc>
 noremap <A-Space> <Esc>
 
