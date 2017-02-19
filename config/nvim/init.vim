@@ -57,6 +57,9 @@ noremap <A-v> <C-v>
 " undo (nvim can't differentiate <C-*> and <C-S-*>
 noremap <C-z> u
 
+" configure title to look like: Vim /path/to/file
+autocmd VIMResized * set title titlestring=%f\ %a%r%m titlelen=70
+
 "Sets tabs to spaces and defines width of tab to 2 spaces and automatic indentation
 set expandtab
 set tabstop=2
