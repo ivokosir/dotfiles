@@ -15,4 +15,3 @@ export GTK2_RC_FILES=/usr/share/themes/Arc/gtk-2.0/gtkrc
 
 # no beep!
 xset -b &
-xautolock -locker 'dm-tool lock' &

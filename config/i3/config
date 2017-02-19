@@ -14,7 +14,7 @@ bindsym $mod+bracketright exec --no-startup-id i3-sensible-editor
 bindsym $mod+backslash exec --no-startup-id firefox
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+x exec --no-startup-id xautolock -locknow
+bindsym $mod+x exec --no-startup-id dm-tool lock
 
 # change focus
 bindsym $mod+h focus left
