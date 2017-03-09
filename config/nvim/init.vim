@@ -34,6 +34,9 @@ hi Normal guibg=#21242b
 
 let mapleader = "\<Space>"
 
+noremap <leader> <nop>
+noremap <Backspace> <nop>
+
 noremap! <A-Space> <Esc>
 noremap <A-Space> <Esc>
 
