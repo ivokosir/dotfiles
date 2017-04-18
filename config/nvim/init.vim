@@ -12,6 +12,7 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'Shougo/vimproc.vim'
 " cool haskell stuff
 Plugin 'eagletmt/ghcmod-vim'
+Plugin 'ElmCast/elm-vim'
 
 call vundle#end()
 
@@ -72,3 +73,5 @@ set si
 " show hidden characters
 set list
 set listchars=tab:▸\ ,trail:·,conceal:·
+
+let g:elm_format_autosave = 1
