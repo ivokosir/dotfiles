@@ -1,9 +1,9 @@
 set shell=sh
-
+set nocompatible
 filetype off
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle/vundle')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 " theme
@@ -12,12 +12,9 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'Shougo/vimproc.vim'
 " cool haskell stuff
 Plugin 'eagletmt/ghcmod-vim'
-Plugin 'ElmCast/elm-vim'
 
 call vundle#end()
-
 filetype plugin indent on
-syntax on
 
 " clipboard on selected
 set guioptions=a
@@ -32,6 +29,7 @@ set termguicolors
 colorscheme onedark
 " clear background
 hi Normal guibg=#21242b
+set guiheadroom=0
 
 let mapleader = "\<Space>"
 
@@ -58,7 +56,7 @@ noremap <C-v> P
 " we need to remap block select because of paste
 noremap <A-v> <C-v>
 
-" undo (nvim can't differentiate <C-*> and <C-S-*>
+" undo (vim can't differentiate <C-*> and <C-S-*>
 noremap <C-z> u
 
 " configure title to look like: Vim /path/to/file
@@ -73,5 +71,3 @@ set si
 " show hidden characters
 set list
 set listchars=tab:▸\ ,trail:·,conceal:·
-
-let g:elm_format_autosave = 1
