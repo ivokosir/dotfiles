@@ -12,28 +12,27 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'Shougo/vimproc.vim'
 " cool haskell stuff
 Plugin 'eagletmt/ghcmod-vim'
+Plugin 'idris-hackers/idris-vim'
 
 call vundle#end()
 filetype plugin indent on
 
 " clipboard on selected
-set guioptions=a
+set guioptions=aei
 " use xorg clipboard
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 " don't use swap
 set noswapfile
 " use numbers
 set number
-" use fancy gui colors
-set termguicolors
 colorscheme onedark
 " clear background
 hi Normal guibg=#21242b
-set guiheadroom=0
 
 let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
 
-noremap <leader> <nop>
+noremap <Space> <nop>
 noremap <Backspace> <nop>
 
 noremap! <A-Space> <Esc>
@@ -60,7 +59,7 @@ noremap <A-v> <C-v>
 noremap <C-z> u
 
 " configure title to look like: Vim /path/to/file
-autocmd VIMResized * set title titlestring=%f\ %a%r%m titlelen=70
+set titlestring=%f\ %a%r%m titlelen=70
 
 "Sets tabs to spaces and defines width of tab to 2 spaces and automatic indentation
 set expandtab
