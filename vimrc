@@ -12,7 +12,6 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'Shougo/vimproc.vim'
 " cool haskell stuff
 Plugin 'eagletmt/ghcmod-vim'
-Plugin 'idris-hackers/idris-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -26,6 +25,8 @@ set noswapfile
 " use numbers
 set number
 colorscheme onedark
+syntax on
+set hlsearch
 " clear background
 hi Normal guibg=#21242b
 
