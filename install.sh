@@ -6,11 +6,16 @@ files="
 config/fish/config.fish
 config/fontconfig/fonts.conf
 config/git/config
+config/gtk-3.0/settings.ini
 config/i3/config
 config/i3status/config
+config/roxterm.sourceforge.net/Colours/my
+config/roxterm.sourceforge.net/Global
+config/roxterm.sourceforge.net/Profiles/my
+config/roxterm.sourceforge.net/Shortcuts/my
 config/user-dirs.dirs
-vim/ftplugin/haskell.vim
-vimrc
+emacs.d/atom-one-dark-theme.el
+emacs.d/init.el
 xprofile
 "
 

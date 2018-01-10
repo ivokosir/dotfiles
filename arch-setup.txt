@@ -1,46 +1,30 @@
 intel-ucode -> must be in efi entry
-useradd -m -G wheel,rfkill ivo -> (rfkill is for wireless, wheel is for sudo)
+useradd -m -G wheel ivo -> (wheel is for sudo)
 chsh -s /usr/bin/fish
 
 packages:
 git
-dialog -> for wifi-menu
-ifplugd -> ehternet (netctl-ifplugd@{interface}.service)
-wpa_actiond -> wifi (netctl-auto@{interface}.service)
-  -> check network
-xf86-video-ati -> radeon driver
+xf86-video-ati -> old radeon driver
+xf86-video-amdgpu -> new radeon driver
 xf86-video-intel -> indel driver
 xorg-server
-xorg-xrandr
+xorg-xrandr -> for multimonitor
 xf86-input-synaptics -> touchpad drivers
 fish
 alsa-utils
 pulseaudio-alsa
 pavucontrol
-xautolock
-numlockx -> turn numlock at startup
-lightdm-gtk-greeter -> configs are in dotfiles (see down) install themes and icons
 i3 -> window manager (package group)
 dmenu
+xorg-xsetroot -> set background colour
 gnome-terminal
 firefox -> install fonts first
-nvim
 zathura -> pdf viewer
 gpicview -> image viewer
 light-git -> backlight setup, aur
 mpv -> video player
 zip
 unzip
-
-network:
-  ethernet dhcp (also edit interface):
-    sudo cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/dhcp
-  wifi:
-    wifi-menu (-o to encrypt)
-  bonding ?? todo
-
-lightdm:
-copy lightm configs to /etc/lightdm/
 
 themes:
 gnome-themes-standard
@@ -58,7 +42,3 @@ ttf-droid
 ttf-freefont -> removes that github bug
 ttf-ubuntu-font-family
 ttf-liberation
-
-vundle:
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall

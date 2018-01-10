@@ -14,8 +14,6 @@ bindsym $mod+bracketright exec --no-startup-id i3-sensible-editor
 bindsym $mod+backslash exec --no-startup-id firefox
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+x exec --no-startup-id dm-tool lock
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -74,6 +72,9 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+
+bindsym $mod+Home workspace prev
+bindsym $mod+End workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
