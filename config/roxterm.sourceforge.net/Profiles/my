@@ -13,3 +13,5 @@ tab_close_btn=0
 tab_pos=4
 hide_menubar=1
 ssh_spawn_type=1
+scroll_on_output=1
+scroll_on_keystroke=1
