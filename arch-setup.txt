@@ -1,6 +1,7 @@
 intel-ucode -> must be in efi entry
 useradd -m -G wheel ivo -> (wheel is for sudo)
 chsh -s /usr/bin/fish
+timedatectl set-ntp true
 
 packages:
 git
