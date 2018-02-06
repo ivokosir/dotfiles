@@ -7,7 +7,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export PATH=$HOME/.local/bin:$PATH
 export VISUAL=/usr/bin/emacs
 export EDITOR=$VISUAL
-export TERMINAL=/usr/bin/roxterm
+export TERMINAL=/usr/bin/termite
 export PAGER=/usr/bin/less
 export TERM=xterm-256color
 

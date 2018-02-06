@@ -9,10 +9,7 @@ config/git/config
 config/gtk-3.0/settings.ini
 config/i3/config
 config/i3status/config
-config/roxterm.sourceforge.net/Colours/my
-config/roxterm.sourceforge.net/Global
-config/roxterm.sourceforge.net/Profiles/my
-config/roxterm.sourceforge.net/Shortcuts/my
+config/termite/config
 config/user-dirs.dirs
 emacs.d/atom-one-dark-theme.el
 emacs.d/init.el

@@ -8,16 +8,14 @@ xf86-video-ati -> old radeon driver
 xf86-video-amdgpu -> new radeon driver
 xf86-video-intel -> indel driver
 xorg-server
-xorg-xrandr -> for multimonitor
 xf86-input-synaptics -> touchpad drivers
 fish
-alsa-utils
 pulseaudio-alsa
 pavucontrol
 i3 -> window manager (package group)
 dmenu
 xorg-xsetroot -> set background colour
-gnome-terminal
+termite
 firefox -> install fonts first
 zathura -> pdf viewer
 gpicview -> image viewer
@@ -42,3 +40,4 @@ ttf-droid
 ttf-freefont -> removes that github bug
 ttf-ubuntu-font-family
 ttf-liberation
+adobe-source-code-pro-fonts -> default monospace
