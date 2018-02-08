@@ -1,0 +1,33 @@
+systemd-boot:
+pacman -S intel-ucode -> only if intel processor, add initrd /intel-ucode.img later
+
+example:
+
+title arch
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+initrd /intel-ucode.img
+options root=PARTUUID=cf2fa4e4-b46a-4288-9396-6e10a4825a6a
+
+systemd-boot update:
+mkdir /etc/pacman.d/hooks
+cp systemd-boot.hook /etc/pacman.d/hooks/systemd-boot.hook
+
+useradd -m -G wheel user # wheel is for sudo
+passwd user
+chsh -s /usr/bin/fish user # needs fish installed
+timedatectl set-ntp true
+
+multihead expample:
+
+/etc/X11/xorg.conf.d/10-monitor.conf
+-----
+Section "Monitor"
+    Identifier "VGA1"
+    Option "Primary" "true"
+EndSection
+
+Section "Monitor"
+    Identifier "HDMI1"
+    Option "RightOf" "VGA1"
+EndSection
