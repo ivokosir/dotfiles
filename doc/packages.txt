@@ -1,38 +1,37 @@
-git
-xf86-video-ati -> old radeon driver
-xf86-video-amdgpu -> new radeon driver
-xf86-video-intel -> indel driver
-xorg-server
-xf86-input-synaptics -> touchpad drivers
-fish
-pulseaudio-alsa
-pavucontrol
-i3 -> window manager (package group)
+groups:
+i3
+
 dmenu
-xorg-xsetroot -> set background colour
-termite
+emacs
 firefox -> install fonts first
-zathura -> pdf viewer
+fish
+git
 gpicview -> image viewer
-light-git -> backlight setup, aur
+intel-ucode -> for intel processors, see install
 mpv -> video player
-zip
+pavucontrol
+pulseaudio-alsa
+sddm
+termite
 unzip
+wpa_supplicant
+xf86-video-amdgpu -> new radeon driver
+xf86-video-ati -> old radeon driver
+xf86-input-synaptics -> touchpad drivers
+xorg-xsetroot -> background color
+zip
 
 themes:
-gnome-themes-standard
-arc-solid-gtk-theme
-
-icons:
 arc-icon-theme
-gnome-icon-theme-extras
+arc-solid-gtk-theme
 elementary-icon-theme
-moka-icon-theme-git (AUR)
+gnome-icon-theme-extras
+gnome-themes-standard
 
 fonts:
 ttf-dejavu
 ttf-droid
-ttf-freefont -> removes that github bug
-ttf-ubuntu-font-family
+ttf-freefont
 ttf-liberation
-adobe-source-code-pro-fonts -> default monospace
+ttf-ubuntu-font-family
+adobe-source-code-pro-fonts
