@@ -3,6 +3,8 @@ pacman -S intel-ucode -> only if intel processor, add initrd /intel-ucode.img la
 
 example:
 
+/boot/loader/entries/arch.conf
+-----
 title arch
 linux /vmlinuz-linux
 initrd /intel-ucode.img
