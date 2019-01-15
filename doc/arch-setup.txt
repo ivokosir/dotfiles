@@ -1,22 +1,16 @@
-systemd-boot:
-pacman -S intel-ucode -> only if intel processor, add initrd /intel-ucode.img later
+grub:
 
-example:
+pacman -S grub efibootmgr
+pacman -S amd-ucode # if amd processor
+pacman -S intel-ucode # if intel processor
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
 
-/boot/loader/entries/arch.conf
------
-title arch
-linux /vmlinuz-linux
-initrd /intel-ucode.img
-initrd /initramfs-linux.img
-options root=PARTUUID=cf2fa4e4-b46a-4288-9396-6e10a4825a6a
-
-systemd-boot update:
-mkdir /etc/pacman.d/hooks
-cp systemd-boot.hook /etc/pacman.d/hooks/systemd-boot.hook
+user:
 
 useradd -m -G wheel user # wheel is for sudo
 passwd user
+pacman -S fish
 chsh -s /usr/bin/fish user # needs fish installed
 timedatectl set-ntp true
 

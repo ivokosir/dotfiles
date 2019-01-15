@@ -5,7 +5,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
 export PATH=$HOME/.local/bin:$PATH
-export VISUAL=/usr/bin/emacs
+export VISUAL=/usr/bin/atom
 export EDITOR=$VISUAL
 export TERMINAL=/usr/bin/termite
 export PAGER=/usr/bin/less
