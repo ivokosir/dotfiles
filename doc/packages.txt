@@ -1,20 +1,19 @@
 groups:
 i3
 
-dmenu
-emacs
-git
-gpicview -> image viewer
-mpv -> video player
-pavucontrol
-pulseaudio-alsa
-sddm
-termite
-unzip
-wpa_supplicant
-xorg-xsetroot -> background color
-zip
-firefox -> install fonts first
+graphics:
+nvidia -> if using nvidia
+
+network:
+connman -> if using more complex network (laptops)
+
+fonts:
+adobe-source-code-pro-fonts
+ttf-dejavu
+ttf-droid
+ttf-freefont
+ttf-liberation
+ttf-ubuntu-font-family
 
 themes:
 arc-icon-theme
@@ -23,10 +22,15 @@ elementary-icon-theme
 gnome-icon-theme-extras
 gnome-themes-extra
 
-fonts:
-ttf-dejavu
-ttf-droid
-ttf-freefont
-ttf-liberation
-ttf-ubuntu-font-family
-adobe-source-code-pro-fonts
+dmenu
+firefox
+git
+gpicview
+mpv
+pavucontrol
+pulseaudio-alsa
+sddm
+termite
+unzip
+xorg-xsetroot
+zip

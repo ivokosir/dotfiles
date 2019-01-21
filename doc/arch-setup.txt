@@ -1,10 +1,23 @@
 grub:
 
 pacman -S grub efibootmgr
+pacman -S os-prober # if dual booting
 pacman -S amd-ucode # if amd processor
 pacman -S intel-ucode # if intel processor
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=arch
 grub-mkconfig -o /boot/grub/grub.cfg
+
+time:
+
+hwclock --systohc
+timedatectl set-timezone Zone/SubZone
+timedatectl set-ntp true
+
+locale:
+
+vi /etc/locale.gen # uncomment required locales
+locale-gen
+localectl set-locale en_US.UTF-8
 
 user:
 
@@ -12,7 +25,6 @@ useradd -m -G wheel user # wheel is for sudo
 passwd user
 pacman -S fish
 chsh -s /usr/bin/fish user # needs fish installed
-timedatectl set-ntp true
 
 multihead expample:
 
