@@ -1,5 +1,5 @@
 if set -q TERMINAL
-    alias t "$TERMINAL"
+    alias t "$TERMINAL &; disown"
 end
 if set -q VISUAL
     alias e "$VISUAL"
