@@ -1,3 +1,5 @@
+exec --no-startup-id xsetroot -solid "#21242b"
+
 set $mod Mod4
 
 font pango:sans bold 10.5

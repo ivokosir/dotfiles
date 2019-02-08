@@ -11,7 +11,6 @@ config/i3/config
 config/i3status/config
 config/termite/config
 config/user-dirs.dirs
-xprofile
 "
 
 mkdir $HOME/.config -p
