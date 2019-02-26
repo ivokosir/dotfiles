@@ -5,7 +5,7 @@ graphics:
 nvidia -> if using nvidia
 
 network:
-connman -> if using more complex network (laptops)
+connman -> if using more complex network (laptops), make sure wpa_supplicant is installed for wifi
 
 fonts:
 adobe-source-code-pro-fonts

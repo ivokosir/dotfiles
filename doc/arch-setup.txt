@@ -18,6 +18,7 @@ locale:
 vi /etc/locale.gen # uncomment required locales
 locale-gen
 localectl set-locale en_US.UTF-8
+localectl set-x11-keymap us,hr
 
 user:
 
