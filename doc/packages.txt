@@ -4,8 +4,9 @@ i3
 graphics:
 nvidia -> if using nvidia
 
-network:
-connman -> if using more complex network (laptops), make sure wpa_supplicant is installed for wifi
+laptop network:
+connman
+wpa_supplicant
 
 fonts:
 adobe-source-code-pro-fonts
@@ -25,8 +26,9 @@ gnome-themes-extra
 dmenu
 firefox
 git
-gpicview
+gpicview-gtk3
 mpv
+numlockx
 pavucontrol
 pulseaudio-alsa
 sddm
