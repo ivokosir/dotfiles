@@ -3,13 +3,12 @@ set -U fish_user_paths $HOME/.local/bin $HOME/.cargo/bin
 set -Ux XDG_CONFIG_HOME $HOME/.config
 set -Ux XDG_CACHE_HOME $HOME/.cache
 set -Ux XDG_DATA_HOME $HOME/.local/share
-set -Ux VISUAL atom
+set -Ux VISUAL code -w
 set -Ux EDITOR $VISUAL
 set -Ux TERMINAL termite
 set -Ux GTK2_RC_FILES /usr/share/themes/Arc-solid/gtk-2.0/gtkrc
 
 alias t "$TERMINAL &; disown"
-alias e "$VISUAL"
 
 alias paci 'sudo pacman -S'
 alias pacd 'sudo pacman -Rns'
