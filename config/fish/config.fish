@@ -3,7 +3,7 @@ set -U fish_user_paths $HOME/.local/bin $HOME/.cargo/bin
 set -Ux XDG_CONFIG_HOME $HOME/.config
 set -Ux XDG_CACHE_HOME $HOME/.cache
 set -Ux XDG_DATA_HOME $HOME/.local/share
-set -Ux VISUAL code -w
+set -Ux VISUAL editor_wait
 set -Ux EDITOR $VISUAL
 set -Ux TERMINAL termite
 set -Ux GTK2_RC_FILES /usr/share/themes/Arc-solid/gtk-2.0/gtkrc

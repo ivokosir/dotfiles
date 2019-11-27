@@ -3,6 +3,7 @@
 dir=$(dirname "$0")
 
 files="
+local/bin/editor_wait
 config/fish/config.fish
 config/fontconfig/fonts.conf
 config/git/config

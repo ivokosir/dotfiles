@@ -14,8 +14,8 @@ bindsym $mod+q kill
 
 # start a apps
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
-bindsym $mod+bracketright exec --no-startup-id i3-sensible-editor
-bindsym $mod+backslash exec --no-startup-id firefox
+bindsym $mod+p exec --no-startup-id i3-sensible-editor
+bindsym $mod+semicolon exec --no-startup-id firefox
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
