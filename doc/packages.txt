@@ -32,7 +32,7 @@ numlockx
 pavucontrol
 pulseaudio-alsa
 sddm
-termite
+alacritty
 unzip
 xorg-xsetroot
 zip

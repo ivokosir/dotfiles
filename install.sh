@@ -4,13 +4,13 @@ dir=$(dirname "$0")
 
 files="
 local/bin/editor_wait
+config/alacritty/alacritty.yml
 config/fish/config.fish
 config/fontconfig/fonts.conf
 config/git/config
 config/gtk-3.0/settings.ini
 config/i3/config
 config/i3status/config
-config/termite/config
 config/user-dirs.dirs
 "
 
