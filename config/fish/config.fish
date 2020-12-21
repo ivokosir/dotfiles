@@ -18,6 +18,11 @@ alias pacs 'pacman -Ss'
 alias pacq 'pacman -Qs'
 alias pacorphans 'pacman -Qqdt'
 
+function fish_user_key_bindings
+    bind \e\[3\;5~ kill-word
+    bind \cH backward-kill-word
+end
+
 set fish_greeting
 
 function fish_prompt
