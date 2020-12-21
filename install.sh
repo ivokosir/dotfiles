@@ -11,6 +11,7 @@ config/git/config
 config/gtk-3.0/settings.ini
 config/i3/config
 config/i3status/config
+config/picom/picom.conf
 config/user-dirs.dirs
 local/bin/editor_wait
 "

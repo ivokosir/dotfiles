@@ -1,6 +1,7 @@
+exec --no-startup-id picom -b
 exec --no-startup-id setxkbmap -option "grp:win_space_toggle"
 exec --no-startup-id numlockx
-exec --no-startup-id xsetroot -solid "#21242b"
+exec --no-startup-id hsetroot -solid "#21242b"
 
 set $mod Mod4
 
