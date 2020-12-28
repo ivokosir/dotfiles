@@ -36,3 +36,4 @@ alacritty
 unzip
 xorg-xsetroot
 zip
+polkit-gnome
