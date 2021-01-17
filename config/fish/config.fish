@@ -6,6 +6,7 @@ set -Ux XDG_DATA_HOME $HOME/.local/share
 set -Ux VISUAL editor_wait
 set -Ux EDITOR $VISUAL
 set -Ux TERMINAL alacritty
+set -Ux PAGER less
 set -Ux GTK2_RC_FILES /usr/share/themes/Arc-solid/gtk-2.0/gtkrc
 
 alias t "$TERMINAL &; disown"
