@@ -9,6 +9,7 @@ config/fish/config.fish
 config/fontconfig/fonts.conf
 config/git/config
 config/gtk-3.0/settings.ini
+config/gtk-4.0/settings.ini
 config/i3/config
 config/i3status/config
 config/picom/picom.conf
