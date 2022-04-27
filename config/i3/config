@@ -1,6 +1,6 @@
 exec --no-startup-id picom -b
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id setxkbmap -option "grp:win_space_toggle"
+exec --no-startup-id setxkbmap -layout us,hr -option "grp:win_space_toggle"
 exec --no-startup-id numlockx
 exec --no-startup-id hsetroot -solid "#21242b"
 
